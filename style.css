@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.road {
+  background-image: url(images/road.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 45vh;
+  position: relative;
+  top: 78%;
+}
+
+.aeroplane {
+  background-image: url(images/airplane.png);
+  height: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 18%;
+  left: 65%;
+  animation: aeroplane 3s linear infinite;
+}
+
+@keyframes aeroplane {
+  40% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-150%) rotate(20deg);
+    transform-origin: right;
+  }
+}
